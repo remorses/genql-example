@@ -4,13 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest"
     },
     "keywords": [],
     "author": "Tommaso De Rossi, morse <beats.by.morse@gmail.com>",
     "license": "ISC",
     "devDependencies": {
         "@genql/cli": "^2.0.4",
+        "@genql/runtime": "^2.0.5",
         "@sucrase/jest-plugin": "^2.0.0",
         "@types/jest": "^26.0.13",
         "jest": "^26.4.2"
@@ -20,9 +21,5 @@
             ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
         }
     },
-    "dependencies": {
-        "@genql/runtime": "^2.0.4",
-        "esbuild-jest": "^0.2.2",
-        "graphql-query-batcher": "^1.0.1"
-    }
+    "dependencies": {}
 }
