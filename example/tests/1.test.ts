@@ -1,16 +1,16 @@
-import { createClient } from "../generated";
+import { createClient } from '../generated'
 
-const client = createClient();
+const client = createClient()
 
-test("first query", async () => {
-  const res = await client.query({
-    __name: 'SomeQuey',
-    continents: {
-      code: 1,
-      name: 1
-    }
-  });
-  expect(res.continents).toMatchInlineSnapshot(`
+test('first query', async () => {
+    const res = await client.query({
+        __name: 'SomeQuey',
+        continents: {
+            code: 1,
+            name: 1,
+        },
+    })
+    expect(res.continents).toMatchInlineSnapshot(`
     Array [
       Object {
         "code": "AF",
@@ -41,5 +41,9 @@ test("first query", async () => {
         "name": "South America",
       },
     ]
-  `);
-});
+  `)
+    const name = await client.chain.query
+        .country({ code: 'NA' })
+        .continent.name.get()
+    console.log(name)
+})
