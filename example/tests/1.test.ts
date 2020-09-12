@@ -4,6 +4,7 @@ const client = createClient();
 
 test("first query", async () => {
   const res = await client.query({
+    __name: 'SomeQuey',
     continents: {
       code: 1,
       name: 1
