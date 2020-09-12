@@ -4,22 +4,25 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "gen": "genql -e https://countries.trevorblades.com -o generated"
     },
     "keywords": [],
     "author": "Tommaso De Rossi, morse <beats.by.morse@gmail.com>",
     "license": "ISC",
     "devDependencies": {
-        "@genql/cli": "^2.0.4",
-        "@genql/runtime": "^2.0.5",
         "@sucrase/jest-plugin": "^2.0.0",
         "@types/jest": "^26.0.13",
-        "jest": "^26.4.2"
+        "jest": "^26.4.2",
+        "jest-cli": "^26.4.2"
     },
     "jest": {
         "transform": {
             ".(js|jsx|ts|tsx)": "@sucrase/jest-plugin"
         }
     },
-    "dependencies": {}
+    "dependencies": {
+        "@genql/cli": "^2.1.0",
+        "@genql/runtime": "^2.1.0"
+    }
 }
