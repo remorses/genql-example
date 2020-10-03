@@ -12,7 +12,7 @@
     "license": "ISC",
     "devDependencies": {
         "@sucrase/jest-plugin": "^2.0.0",
-        "@types/jest": "^26.0.13",
+        "@types/jest": "^26.0.14",
         "jest": "^26.4.2",
         "jest-cli": "^26.4.2"
     },
@@ -22,7 +22,7 @@
         }
     },
     "dependencies": {
-        "@genql/cli": "^2.1.0",
-        "@genql/runtime": "^2.1.0"
+        "@genql/cli": "^2.3.0",
+        "@genql/runtime": "^2.3.0"
     }
 }

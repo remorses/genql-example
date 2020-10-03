@@ -10,6 +10,7 @@ test('first query', async () => {
             name: 1,
         },
     })
+    res.continents[0].code
     expect(res.continents).toMatchInlineSnapshot(`
     Array [
       Object {
