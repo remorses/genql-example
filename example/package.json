@@ -22,7 +22,7 @@
         }
     },
     "dependencies": {
-        "@genql/cli": "^2.3.0",
-        "@genql/runtime": "^2.3.0"
+        "@genql/cli": "^2.3.2",
+        "@genql/runtime": "^2.3.2"
     }
 }
